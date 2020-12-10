@@ -22,7 +22,11 @@ sudo chmod -R ugo+rX /var/www/html/cloudera-repos/spark2
 
 sudo mkdir -p /var/www/html/cloudera-repos
 sudo wget --recursive --no-parent --no-host-directories https://archive.cloudera.com/sqoop-teradata-connector1/1.7.1c6/parcels/ -P /var/www/html/cloudera-repos
+sudo wget --recursive --no-parent --no-host-directories https://archive.cloudera.com/sqoop-netezza-connector1/1.5.1c6/parcels/ -P /var/www/html/cloudera-repos
+sudo wget --recursive --no-parent --no-host-directories https://archive.cloudera.com/sqoop-connectors/parcels/1.7.23/ -P /var/www/html/cloudera-repos
 sudo chmod -R ugo+rX /var/www/html/cloudera-repos/sqoop-teradata-connector1
+sudo chmod -R ugo+rX /var/www/html/cloudera-repos/sqoop-netezza-connector1
+sudo chmod -R ugo+rX /var/www/html/cloudera-repos/sqoop-connectors
 
 sudo yum -y install httpd
 sudo systemctl start httpd
