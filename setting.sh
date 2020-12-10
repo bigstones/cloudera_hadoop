@@ -31,7 +31,7 @@ gpgcheck=1
 enabled=1' > /etc/yum.repos.d/cloudera-repo.repo
 
 echo never > /sys/kernel/mm/transparent_hugepage/defrag
-echo never > /sys/kernel/mm/transparent_hugepage/enabledsysctl
+echo never > /sys/kernel/mm/transparent_hugepage/enabled
 
 echo 'echo never > /sys/kernel/mm/transparent_hugepage/defrag
 echo never > /sys/kernel/mm/transparent_hugepage/enabled' >> /etc/rc.local
