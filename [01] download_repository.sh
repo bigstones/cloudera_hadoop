@@ -31,10 +31,7 @@ sudo chmod -R ugo+rX /var/www/html/cloudera-repos/sqoop-connectors
 sudo yum -y install httpd
 sudo systemctl start httpd
 sudo mkdir -p /var/www/html/cloudera-repos/cm6
-wget https://archive.cloudera.com/cm6/6.3.1/repo-as-tarball/cm6.3.1-redhat7.tar.gz
-tar xvfz cm6.3.1-redhat7.tar.gz -C /var/www/html/cloudera-repos/cm6 --strip-components=1
+sudo wget https://archive.cloudera.com/cm6/6.3.1/repo-as-tarball/cm6.3.1-redhat7.tar.gz
+sudo tar xvfz cm6.3.1-redhat7.tar.gz -C /var/www/html/cloudera-repos/cm6 --strip-components=1
 sudo chmod -R ugo+rX /var/www/html/cloudera-repos/cm6
-
-sudo mkdir -p /var/www/html/cloudera-repos
-sudo wget --recursive --no-parent --no-host-directories https://archive.cloudera.com/cm6/6.3.1/redhat7/ -P /var/www/html/cloudera-repos
 sudo wget https://archive.cloudera.com/cm6/6.3.1/allkeys.asc -P /var/www/html/cloudera-repos/cm6/6.3.1/
