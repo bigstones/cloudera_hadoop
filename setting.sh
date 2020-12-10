@@ -34,7 +34,7 @@ echo never > /sys/kernel/mm/transparent_hugepage/defrag
 echo never > /sys/kernel/mm/transparent_hugepage/enabledsysctl
 
 echo 'echo never > /sys/kernel/mm/transparent_hugepage/defrag
-echo never > /sys/kernel/mm/transparent_hugepage/enabledsysctl' >> /etc/rc.local
+echo never > /sys/kernel/mm/transparent_hugepage/enabled' >> /etc/rc.local
 
 ehco vm.swappiness=0 >> /etc/sysctl.conf
 
