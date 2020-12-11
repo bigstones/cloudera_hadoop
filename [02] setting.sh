@@ -1,6 +1,6 @@
 # 각 서버마다 설정해줘야하는게 조금씩 달라요
 
-echo '# 127.0.0.1 localhost
+#echo '# 127.0.0.1 localhost
 
 # 192.168.0.[] nn.privhadoop.com nn
 # 192.168.0.[] dn01.privhadoop.com dn01
@@ -24,11 +24,11 @@ sudo systemctl enable ntpd
 hwclock --systohc
 
 #echo '[cloudera-repo]
-name=cloudera-repo
-baseurl=http://192.168.0.[]/cloudera-repos/cm6/6.3.1/redhat7/yum/ # <-- 여기에 있는 []안에는 namenode ip 입력해주셔야해요
-gpgkey=http://192.168.0.[]/cloudera-repos/cm6/6.3.1/redhat7/yum/RPM-GPG-KEY-cloudera # <-- 여기에 있는 []안에는 namenode ip 입력해주셔야해요
-gpgcheck=1
-enabled=1' > /etc/yum.repos.d/cloudera-repo.repo
+#name=cloudera-repo
+#baseurl=http://192.168.0.[]/cloudera-repos/cm6/6.3.1/redhat7/yum/ # <-- 여기에 있는 []안에는 namenode ip 입력해주셔야해요
+#gpgkey=http://192.168.0.[]/cloudera-repos/cm6/6.3.1/redhat7/yum/RPM-GPG-KEY-cloudera # <-- 여기에 있는 []안에는 namenode ip 입력해주셔야해요
+#gpgcheck=1
+#enabled=1' > /etc/yum.repos.d/cloudera-repo.repo
 
 echo never > /sys/kernel/mm/transparent_hugepage/defrag
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
